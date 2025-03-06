@@ -18,18 +18,18 @@
 <body>
 
   <!-- Rating state start -->
-<section class="card-container">
+<section class="rating-container">
   <div class="star-circle"><img src="./images/icon-star.svg" alt="orange star"></div>
   
   <h2>How did we do?</h2>
   <p>Please let us know how we did with your support request. All feedback is appreciated 
     to help us improve our offering!</p>
     <div class="score">
-      <div class="score-num">1</div>
-      <div class="score-num">2</div>
-      <div class="score-num">3</div>
-      <div class="score-num">4</div>
-      <div class="score-num">5</div>
+      <button class="score-num">1</button>
+      <button class="score-num">2</button>
+      <button class="score-num">3</button>
+      <button class="score-num">4</button>
+      <button class="score-num">5</button>
     </div> 
 
   <button>Submit</button>
@@ -40,20 +40,23 @@
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
+<section class="state-container">
+  <img src="./images/illustration-thank-you.svg" alt="">
+  <p>You selected <span>4</span> out of 5</p>
+  
+<h2>Thank you!</h2>
+  
+<p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+  
 
   <!-- Thank you state end -->
 
+</section>
   
-  <div class="attribution">
+  
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">crskwy</a>.
-  </div>
+  </footer>
 </body>
 </html>

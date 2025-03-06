@@ -8,12 +8,14 @@
   --Orange: hsl(25, 97%, 53%);
   --White: hsl(0, 0%, 100%);
   --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(217, 12%, 24%);
   --Dark-Blue: hsl(213, 19%, 18%);
   --Very-Dark-Blue: hsl(216, 12%, 8%);
 }
 
 body {
     height: 100vh;
+    font-size: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,7 +23,7 @@ body {
     background-color: var(--Very-Dark-Blue);
     
 }
-.card-container {
+.rating-container, .state-container {
     width: 328px;
     display: flex;
     flex-direction: column;
@@ -36,8 +38,7 @@ body {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: var(--Light-Grey);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: var(--Medium-Grey);
+    display: grid;
+    place-content: center;
 }
