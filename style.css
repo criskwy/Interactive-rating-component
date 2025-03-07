@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
  margin: 0;
  padding: 0;
@@ -11,6 +13,7 @@
   --Medium-Grey: hsl(217, 12%, 24%);
   --Dark-Blue: hsl(213, 19%, 18%);
   --Very-Dark-Blue: hsl(216, 12%, 8%);
+  --font-Overpass: "Overpass", sans-serif;
 }
 
 body {
@@ -21,24 +24,104 @@ body {
     align-items: center;
     justify-content: center;
     background-color: var(--Very-Dark-Blue);
+    font-family: var(--font-Overpass);
     
 }
-.rating-container, .state-container {
+
+.rating-container, .thankyou-state-container {
     width: 328px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--Dark-Blue);
     color: var(--White);
-    padding: 20px;
+    padding: 30px 22px;
     border-radius: 16px;
 
 }
-.star-circle {
-    width: 30px;
-    height: 30px;
+
+
+.star-circle, .score-num {
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: var(--Medium-Grey);
     display: grid;
     place-content: center;
+    margin-bottom: 22px;
+}
+.star-circle > img {
+    width: 12px;
+    
+}
+.rating-container__title, .thankyou-title {
+    font-size: 1.6em;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+.rating-container__paragraph {
+    font-size: 0.9em;
+    color: var(--Light-Grey);
+    letter-spacing: 0.4px;
+    line-height: 20px;
+    margin-bottom: 24px;
+}
+.score-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.score-container > .score-num {
+    background-color: var(--Medium-Grey);
+    color: var(--Light-Grey);
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    
+}
+
+.score-container > .score-num:focus {
+background-color: var(--White);
+color: var(--Very-Dark-Blue);
+}
+.score-container > .score-num:hover {
+    background-color: var(--Orange);
+    color: var(--Very-Dark-Blue);
+}
+.submit-btn {
+    background-color: var(--Orange);
+    border: none;
+    padding: 14px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    border-radius: 40px;
+    cursor: pointer;
+    
+}
+.submit-btn:hover {
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+.rating-container{
+    display: none;
+}
+
+/* thankyou state container*/
+
+.thankyou-state-container {
+align-items: center;
+}
+
+.thankyou-image {
+    width: 140px;
+}
+.thankyou-subtitle {
+    color: var(--Orange);
+    font-size: 0.95em;
+    margin: 20px 0 25px;
+    background-color: var(--Medium-Grey);
+    padding: 6px 12px;
+    border-radius: 25px;
 }
