@@ -30,6 +30,7 @@ body {
 
 .rating-container, .thankyou-state-container {
     width: 328px;
+    height: 360px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -104,7 +105,7 @@ color: var(--Very-Dark-Blue);
     color: var(--Orange);
 }
 
-.rating-container{
+.thankyou-state-container{
     display: none;
 }
 
@@ -125,3 +126,13 @@ align-items: center;
     padding: 6px 12px;
     border-radius: 25px;
 }
+.thankyou-paragraph{
+    color: var(--Light-Grey);
+    font-size: 0.9em;
+    text-align: center;
+}
+
+
+.attribution { font-size: 11px; text-align: center;}
+.attribution a { color: hsl(228, 45%, 44%); }
+  
